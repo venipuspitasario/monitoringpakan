@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CekPakan Kasongan - Monitoring Harga & Kualitas Pakan</title>
+    <meta name="description" content="Dashboard publik untuk cek harga dan kualitas pakan ternak Kasongan. Data real-time dari Google Sheets.">
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1MBxX9s1OtNvcIGVwAjvCGTcJCSjajPvM">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+              }
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<style>
+  /* Mencegah pergeseran tata letak saat gambar dimuat */
+  .logo-container {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
